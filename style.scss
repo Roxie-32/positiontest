@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.green{background-color: green;}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    position: relative;
+    .round{
+        position: absolute;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+        @media screen and (max-width:568px){
+            height: 6rem;
+            width: 6rem;
+        }
+    
+    }
+    .green{
+        top: 0;
+        left: 0;
+        background-color: green;
+    }
+    .red{
+        background-color: red;
+        top: 50%;
+        right: 50%;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%,-50%);
+        @media screen and (max-width:568px){
+            top: 100%;
+        bottom: 0;
+        transform: translate(-50%,-100%);
+        }
+    }
+    .blue{
+        bottom: 0;
+        right: 0;
+        background-color:blue;
+        @media screen and (max-width:568px){
+            top: 0;
+            right: 0;
+        }
+    }
+}
